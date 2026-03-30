@@ -1,48 +1,184 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My First Website</title>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXPLICITLY HER</title>
     <style>
         body {
-            font-family: Arial;
-            background:  radial-gradient(circle, white 40%, #f802f8 70%, #7f0099 100%);
-            text-align: center;
+            font-family: Arial, sans-serif;
             margin: 0;
+            background: #ffffff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
 
-        .card {
-            background: white;
-            padding: 60px 40px;
-            margin: 100px auto;
-            width: 900px;
-            height: 1000px;
-            border-radius: 20px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-            text-align: left;
-        }
-
-        img {
-            width: 120px;
-            border-radius: 50%;
-        }
-
-        h1 {
+        /* Header */
+        header {
+            width: 100%;
+            background: #7f0099;
+            color: white;
             text-align: center;
-            color: #333;
+            padding: 50px 0;
         }
 
-        p {
-            color: #666;
+        header h1 {
+            margin: 0;
+            font-size: 36px;
         }
+
+        /* Container for all content */
+        .container {
+            width: 90%;
+            max-width: 900px;
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            margin: 40px 0;
+        }
+
+        /* Mini cards row outside main cards */
+        .mini-card-row {
+            display: flex;
+            gap: 25px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+        }
+
+        .mini-card {
+            background: #ffb6c1;
+            color: #7f0099;
+            padding: 30px 25px;      /* bigger padding */
+            border-radius: 18px;
+            text-align: center;
+            width: 180px;             /* bigger width */
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .mini-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+        }
+
+        .mini-card-icon {
+            font-size: 40px;          /* big icon */
+            margin-bottom: 12px;
+        }
+
+        .mini-card-title {
+            font-weight: bold;
+            font-size: 20px;          /* big title */
+            margin-bottom: 6px;
+        }
+
+        .mini-card-text {
+            font-size: 16px;          /* bigger text */
+        }
+
+        /* Main vertical cards */
+        .inner-card {
+            background: #f9f9f9;
+            border-radius: 15px;
+            padding: 25px 35px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+            cursor: pointer;
+            transition: transform 0.3s, box-shadow 0.3s;
+            Height: 150px;
+        }
+
+        .inner-card:hover {
+            box-shadow: 0 12px 30px rgba(0,0,0,0.3);
+        }
+
+        .inner-card.active {
+            transform: scale(1.1);
+            z-index: 10;
+        }
+
+        .inner-card h2 {
+            margin-top: 0;
+            margin-bottom: 12px;
+            font-size: 24px;
+        }
+
+        .inner-card p {
+            margin: 0;
+            color: #555;
+            font-size: 16px;
+        }
+
+        .highlight-text {
+    font-size: 28px;       /* make it large */
+    font-weight: bold;
+    text-align: center;
+    margin: 40px 0 20px 0;
+    color: #7f0099;
+    }
+
     </style>
 </head>
-
 <body>
-    
-    <div class="card">
-        <h1>Womens Month</h1>
-        <p class = "left text">Text</p>
+
+    <header>
+        <h1>Women's Month</h1>
+    </header>
+
+    <div class="container">
+
+        <!-- Large Mini Cards -->
+        <div class="mini-card-row">
+            <div class="mini-card">
+                <div class="mini-card-title">Challenge</div>
+                <div class="mini-card-text">Important update</div>
+            </div>
+            <div class="mini-card">
+                <div class="mini-card-title">Inspiration</div>
+                <div class="mini-card-text">Trending topic</div>
+            </div>
+            <div class="mini-card">
+                <div class="mini-card-title">Highlights</div>
+                <div class="mini-card-text">Features</div>
+            </div>
+        </div>
+
+        <!-- Main Cards -->
+        <div class="inner-card">
+            <h2>Mary Joy Olivarez | BSIT 1-2</h2>
+            <p>People can sometimes be mistaken about the concept of the IT program and think that only male students are capable of creating a career in the IT field. Because there are plenty of female students who I’ve seen in the field of IT, which could also mean that they are capable of working alongside any male’s job and have the power to lead and get the job done.</p>
+        </div>
+
+        <div class="inner-card">
+            <h2>Bohdana Yoome V. Balansay | BSIT 2-1</h2>
+            <p>To other women in IT, don’t be afraid to take up space in this field. Your ideas and skills matter. Even if it feels challenging, keep going and support one another. We need more women in tech to break stereotypes and inspire future generations.</p>
+        </div>
+
+        <div class="inner-card">
+            <h2>Kathlen Mae L. Callos | BSIT 2-1</h2>
+            <p>he hardest moment for me was exploring more about programming because I was into hardware part of technology and i'm not familiar about it and I kinda feel a difficulty about it to self studying, but since I was an explorer I put time and efforts to self study to discover new and to learn more about it more so that I can be familiar to it and expand my knowledge in coding.</p>
+        </div>
+
+        <div class="highlight-text">
+            What are the historical women figures in the field of I.T
+        </div>
+
+        <div class="inner-card">
+    <h2>Ada Lovelace</h2>
+    <p>Considered the first computer programmer. She worked on Charles Babbage's early mechanical general-purpose computer, the Analytical Engine.</p>
+</div>
+
+<div class="inner-card">
+    <h2>Grace Hopper</h2>
+    <p>A computer scientist and U.S. Navy rear admiral who helped develop the first compiler for a computer programming language.</p>
+</div>
+
+<div class="inner-card">
+    <h2>Katherine Johnson</h2>
+    <p>A mathematician whose calculations of orbital mechanics were critical to the success of the first and subsequent U.S. manned spaceflights.</p>
+</div>
+
     </div>
 
 </body>
