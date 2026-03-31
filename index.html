@@ -8,13 +8,13 @@
         body {
             font-family: Arial, sans-serif;
             margin: 0;
-            background: #ffffff;
+            background: linear-gradient(to bottom, #ffffff, #f3e6f9, #e6ccf2);
             display: flex;
             flex-direction: column;
             align-items: center;
         }
 
-        /* Header */
+        
         header {
             width: 100%;
             background: #7f0099;
@@ -28,7 +28,7 @@
             font-size: 36px;
         }
 
-        /* Container for all content */
+        
         .container {
             width: 90%;
             max-width: 900px;
@@ -38,22 +38,27 @@
             margin: 40px 0;
         }
 
-        /* Mini cards row outside main cards */
+       
         .mini-card-row {
             display: flex;
-            gap: 25px;
-            justify-content: center;
-            flex-wrap: wrap;
-            margin-bottom: 20px;
+            flex-direction: column;
+            gap: 20px;
+            align-items: center;
+            
+        }
+
+        .mini-bottom {
+        display: flex;
+        gap: 25px;
         }
 
         .mini-card {
             background: #ffb6c1;
             color: #7f0099;
-            padding: 30px 25px;      /* bigger padding */
+            padding: 30px 25px;      
             border-radius: 18px;
             text-align: center;
-            width: 180px;             /* bigger width */
+            width: 180px;             
             cursor: pointer;
             transition: transform 0.2s, box-shadow 0.2s;
         }
@@ -64,21 +69,21 @@
         }
 
         .mini-card-icon {
-            font-size: 40px;          /* big icon */
+            font-size: 40px;          
             margin-bottom: 12px;
         }
 
         .mini-card-title {
             font-weight: bold;
-            font-size: 20px;          /* big title */
+            font-size: 20px;          
             margin-bottom: 6px;
         }
 
         .mini-card-text {
-            font-size: 16px;          /* bigger text */
+            font-size: 16px;          
         }
 
-        /* Main vertical cards */
+       
         .inner-card {
             background: #f9f9f9;
             border-radius: 15px;
@@ -86,7 +91,7 @@
             box-shadow: 0 2px 12px rgba(0,0,0,0.1);
             cursor: pointer;
             transition: transform 0.3s, box-shadow 0.3s;
-            Height: 150px;
+            Height: auto;
         }
 
         .inner-card:hover {
@@ -111,15 +116,45 @@
         }
 
         .highlight-text {
-    font-size: 28px;       /* make it large */
+    font-size: 28px;       
     font-weight: bold;
     text-align: center;
     margin: 40px 0 20px 0;
     color: #7f0099;
     }
 
+
+html, body {
+    height: 100%;
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    flex: 1; 
+}
+
+
+footer {
+    width: 100%;
+    background: #7f0099;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 16px;
+}
+
     </style>
 </head>
+
+<footer>
+    <p>© 2026 Women's Month | Empowering Women in Tech 💜</p>
+</footer>
+
 <body>
 
     <header>
@@ -128,58 +163,58 @@
 
     <div class="container">
 
-        <!-- Large Mini Cards -->
+       
         <div class="mini-card-row">
             <div class="mini-card">
-                <div class="mini-card-title">Challenge</div>
-                <div class="mini-card-text">Important update</div>
-            </div>
-            <div class="mini-card">
-                <div class="mini-card-title">Inspiration</div>
-                <div class="mini-card-text">Trending topic</div>
-            </div>
-            <div class="mini-card">
-                <div class="mini-card-title">Highlights</div>
-                <div class="mini-card-text">Features</div>
-            </div>
+        <div class="mini-card-title">Women</div>
+        
+    </div>
+            <div class="mini-bottom">
+        <div class="mini-card">
+            <div class="mini-card-title">Independent</div>
         </div>
 
-        <!-- Main Cards -->
+        <div class="mini-card">
+            <div class="mini-card-title">Reliable</div>
+        </div>
+    </div>
+
+        
         <div class="inner-card">
             <h2>Mary Joy Olivarez | BSIT 1-2</h2>
-            <p>People can sometimes be mistaken about the concept of the IT program and think that only male students are capable of creating a career in the IT field. Because there are plenty of female students who I’ve seen in the field of IT, which could also mean that they are capable of working alongside any male’s job and have the power to lead and get the job done.</p>
-        </div>
+            <p>Mary Joy didn't let the fear of a new environment stop her from taking her shot in the IT program. Coming from a STEM background, she embraced the challenging transition into her first year by relying on her community to grow and learn. Stepping completely out of her comfort zone, she became a Junior Leader in EXPLICIT, proving her ability to guide her peers. She reminds us that nothing limits us except our own minds, urging others to "try to do hard things, and be comfortable with being embarrassed."</p></div>
 
         <div class="inner-card">
             <h2>Bohdana Yoome V. Balansay | BSIT 2-1</h2>
-            <p>To other women in IT, don’t be afraid to take up space in this field. Your ideas and skills matter. Even if it feels challenging, keep going and support one another. We need more women in tech to break stereotypes and inspire future generations.</p>
+            <p>Yoome proves that pushing through self-doubt is the ultimate tech skill. Initially intimidated as one of the few girls in her technical classes, she fought through imposter syndrome by studying harder and asking difficult questions. She realized that every new skill learned and roadblock overcome is a massive victory, building her confidence from the ground up. She encourages other women to take up space, stating, "Your ideas and skills matter, and we need more women in tech to break stereotypes."</p>
         </div>
 
         <div class="inner-card">
             <h2>Kathlen Mae L. Callos | BSIT 2-1</h2>
-            <p>he hardest moment for me was exploring more about programming because I was into hardware part of technology and i'm not familiar about it and I kinda feel a difficulty about it to self studying, but since I was an explorer I put time and efforts to self study to discover new and to learn more about it more so that I can be familiar to it and expand my knowledge in coding.</p>
+            <p>Kathleen started in hardware, conquered coding, and proudly represented her organization on the main stage. Calling herself an "explorer," she put in countless hours of self-study to overcome the massive learning curve of complex programming. Pushing past her limits, she competed in the Philippine History Quiz Bee and is now setting her sights on future Hackathons. Her message to anyone struggling is simple: "Explore more, discover something better, and trust the process."</p>
         </div>
 
         <div class="highlight-text">
-            What are the historical women figures in the field of I.T
+            What are the contributiions of historical women figures in the field of I.T
         </div>
 
         <div class="inner-card">
-    <h2>Ada Lovelace</h2>
-    <p>Considered the first computer programmer. She worked on Charles Babbage's early mechanical general-purpose computer, the Analytical Engine.</p>
+    <h2>Radia Perlman</h2>
+    <p>The Bio: Radia Perlman is a software designer and network engineer who literally wrote the rules for how computers talk to each other. In the 1980s, networks used to crash constantly if there were too many connections (data would just loop endlessly). The Ultimate Achievement: She invented the Spanning Tree Protocol (STP). This algorithm allowed network bridges and switches to figure out the best path for data to travel without creating massive, server-crashing loops. She essentially made the massive, modern structure of the Internet possible!</p>
 </div>
 
 <div class="inner-card">
     <h2>Grace Hopper</h2>
-    <p>A computer scientist and U.S. Navy rear admiral who helped develop the first compiler for a computer programming language.</p>
-</div>
+    <p>Rear Admiral Grace Hopper was a computer scientist and military legend. Back in the day, code was just 1s and 0s, which took forever to write. She believed code should be written in a language humans could actually read. The Ultimate Achievement: She invented the first Compiler—a program that translates English-like instructions into machine code. This paved the way for modern programming languages like Java and C#. (She also popularized the term "debugging" after pulling an actual, physical moth out of a broken computer relay!)</p></div>
 
 <div class="inner-card">
     <h2>Katherine Johnson</h2>
-    <p>A mathematician whose calculations of orbital mechanics were critical to the success of the first and subsequent U.S. manned spaceflights.</p>
+    <p>Dorothy Vaughan was a brilliant mathematician and the first Black supervisor at the National Advisory Committee for Aeronautics (which later became NASA). When electronic computers first arrived, she realized that the human mathematicians (called "computers" at the time) were going to lose their jobs to machines. The Ultimate Achievement: Instead of giving up, she taught herself FORTRAN, one of the very first high-level programming languages. Then, she taught it to her entire staff of Black women. She transformed her team from human calculators into some of the first professional software engineers in aerospace history.</p></div>
 </div>
 
-    </div>
+<footer>
+    <p>EXPLORE MORE, AND DISCOVER SOMETHING BETTER. - Kathlen Mae L. Callos</p>
+</footer>
 
 </body>
 </html>
